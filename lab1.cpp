@@ -1,3 +1,8 @@
+1. Write a program to print the area of a triangle having width and height by creating a class
+name ‘Triangle’ with parameter in its constructor. ( By C++ or Java )
+
+
+
 #include <iostream>
 using namespace std;
 
