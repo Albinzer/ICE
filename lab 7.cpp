@@ -1,3 +1,6 @@
+7. Write a program to display student details using class.( By C++ or Java )
+
+
 #include <iostream>
 using namespace std;
 
