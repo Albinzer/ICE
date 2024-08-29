@@ -1,3 +1,8 @@
+10. Write a program that takes marks in individual subjects from the user and calculate the GPA.
+( By C++ or Java )
+
+
+
 import java.util.Scanner;
 
 class GPACalculator {
