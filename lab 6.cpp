@@ -1,3 +1,6 @@
+6. Write a program to input two strings and add them.( By C++ or Java )
+
+
 #include <iostream>
 #include <string>
 using namespace std;
