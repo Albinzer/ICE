@@ -1,3 +1,8 @@
+2. Write a program to print the sum of the three numbers entered by user by creating a class and
+method.( By C++ or Java )
+
+
+
 import java.util.Scanner;
 
 // CLASS
