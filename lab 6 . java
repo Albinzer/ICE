@@ -1,0 +1,23 @@
+6. Write a program to input two strings and add them.( By C++ or Java )
+
+import java.util.Scanner;
+
+public class ConcatenateStrings {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input two strings from the user
+        System.out.print("Enter the first string: ");
+        String str1 = scanner.nextLine();
+        System.out.print("Enter the second string: ");
+        String str2 = scanner.nextLine();
+
+        // Concatenate the strings
+        String result = str1 + str2;
+
+        // Output the result
+        System.out.println("The concatenated string is: " + result);
+        
+        scanner.close();
+    }
+}
