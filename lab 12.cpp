@@ -1,3 +1,7 @@
+12. Write a program creating a super-class with variable “name” and “age”, and a method
+display();and create a subclass with variable “salary”.Now inherit the subclass to print the name,salary and age. ( By C++ or Java ) (From applet):
+
+
 #include <iostream>
 using namespace std;
 
