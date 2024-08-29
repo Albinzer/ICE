@@ -1,3 +1,5 @@
+7. Write a program to display student details using class.( By C++ or Java )
+
 import java.util.Scanner;
 
 class Student {
