@@ -1,43 +1,46 @@
-8. Write a program to calculate the volume of a sphere , cube and cylinder.( By C++ or Java )
-
-
+ 8. Write a program to calculate the volume of a sphere , cube and cylinder.( By C++ or Java )
 
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-class VolumeCalculator {
+class Shape {
 public:
-    double calculateSphereVolume(double radius) {
-        return (4.0 / 3.0) * M_PI * pow(radius, 3);
+    double pi, rad, h, a;
+
+    // Constructor to initialize the variables
+    Shape(double p, double r, double height, double side) {
+        pi = p;
+        rad = r;
+        h = height;
+        a = side;
     }
 
-    double calculateCubeVolume(double side) {
-        return pow(side, 3);
-    }
-
-    double calculateCylinderVolume(double radius, double height) {
-        return M_PI * pow(radius, 2) * height;
+    // Method to calculate and display the volumes
+    void volume() {
+        cout << "Volume of the sphere: " << (4.0 / 3.0) * pi * pow(rad, 3) << endl;
+        cout << "Volume of the cube: " << pow(a, 3) << endl;
+        cout << "Volume of the cylinder: " << pi * pow(rad, 2) * h << endl;
     }
 };
 
 int main() {
-    VolumeCalculator vc;
-    double radius, side, height;
+    double pi = 3.14159; // Define the value of pi
+    double rad, h, a;
 
-    cout << "Enter the radius of the sphere: ";
-    cin >> radius;
-    cout << "Volume of Sphere: " << vc.calculateSphereVolume(radius) << endl;
-
-    cout << "Enter the side of the cube: ";
-    cin >> side;
-    cout << "Volume of Cube: " << vc.calculateCubeVolume(side) << endl;
-
-    cout << "Enter the radius of the cylinder: ";
-    cin >> radius;
+    // Taking inputs from the user
+    cout << "Enter the radius of the sphere/cylinder: ";
+    cin >> rad;
     cout << "Enter the height of the cylinder: ";
-    cin >> height;
-    cout << "Volume of Cylinder: " << vc.calculateCylinderVolume(radius, height) << endl;
+    cin >> h;
+    cout << "Enter the side length of the cube: ";
+    cin >> a;
+
+    // Creating an object of the Shape class
+    Shape shape(pi, rad, h, a);
+
+    // Calling the volume method to display results
+    shape.volume();
 
     return 0;
 }
